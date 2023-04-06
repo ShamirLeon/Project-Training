@@ -1,0 +1,65 @@
+.NavBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 50;
+
+    &__Logo{
+        width: 20px;
+    }
+
+    &__Div{
+        width: 45%;
+        height: 100%;
+        background-color: var(--LightGrayishBlue);
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
+
+    &__Menu{
+        position: absolute;
+        top: -220px;
+        left: 0;
+        right: 0;
+        margin: 0 30px;
+        padding: 24px 0;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        z-index: 30;
+        border-radius: 4px;
+        transition: all .3s ease-in;
+        
+        li{
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: 700;
+            width: 100%;
+            text-align: center;
+            transition: color .3s ease;
+
+            &:hover{
+                color: var(--GrayishBlue);
+            }
+
+            &:last-child{
+                color: var(--GrayishBlue);
+            }
+        }
+    }
+}
+
+.Menu__Spacer{
+    width: 80%;
+    height: 1px;
+    background-color: var(--GrayishBlue);
+}
+
+.active{
+    top: 64px;
+}

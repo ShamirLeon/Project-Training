@@ -1,0 +1,21 @@
+.Hero{
+    overflow: hidden;
+    padding: 40px 0;
+    position: relative;
+    
+    &__Img{
+        width: 520px;
+        padding: 0 12px;
+    }
+
+    div{
+        width: 45%;
+        height: 100%;
+        background-color: var(--LightGrayishBlue);
+        position: absolute;
+        right: 0;
+        top: 0;
+        border-bottom-left-radius: 50px;
+        z-index: -1;
+    }
+}

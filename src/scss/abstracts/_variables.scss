@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+:root{
+    /* Fonts */
+    --font-Barlow: 'Barlow', sans-serif;
+    --font-BarlowCondensed: 'Barlow Condensed', sans-serif;
+
+    /* Colors */
+    --Red: #ff5c5c;
+    --VeryDarkBlue: #242942;
+    --DarkGrayishBlue: #5b5f71;
+    --GrayishBlue: #a0a1ac;
+    --LightGrayishBlue: #eef3f6;
+
+    /* Padding */
+    --paddingContainer: 20px 30px;
+}

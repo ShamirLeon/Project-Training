@@ -1,0 +1,60 @@
+.Main{
+
+    div{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 8px 0;
+    }
+
+    span{
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 14px;
+        background: var(--VeryDarkBlue);
+        color: #fff;
+        padding: 3px 8px;
+        border-radius: 1em;
+    }
+
+    h1, h3, button{
+        text-transform: uppercase;
+    }
+
+    &__Title{
+        color: var(--VeryDarkBlue);
+        margin: 8px 0;
+    }
+
+    h3{
+        display: inline-block;
+        font-size: 14px;
+        letter-spacing: 4px;
+        font-weight: 400;
+        color: var(--GrayishBlue);
+    }
+
+    &__Paragraph{
+        color: var(--GrayishBlue);
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+
+    &__Button{
+        font-size: 12px;
+        margin-right: 8px;
+        background-color: var(--Red);
+        color: #fff;
+        font-weight: 700;
+        padding: 10px 16px;
+        letter-spacing: 2px;
+        border-radius: 4px;
+
+        &--second{
+            background: none;
+            color: var(--GrayishBlue);
+            font-weight: 400;
+        }
+    }
+
+}
