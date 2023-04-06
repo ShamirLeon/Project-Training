@@ -11,8 +11,12 @@ function MainComponent() {
         Project plaining and time tracking for agile teams
       </p>
 
-      <button className="Main__Button">Schedule a demo</button>
-      <button className="Main__Button Main__Button--second">to See a preview</button>
+      <div>
+        <button className="Main__Button">Schedule a demo</button>
+        <button className="Main__Button Main__Button--second">
+          to See a preview
+        </button>
+      </div>
     </main>
   );
 }

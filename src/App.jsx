@@ -6,8 +6,10 @@ function App() {
   return (
     <div>
       <NavBar />
-      <Hero />
-      <MainComponent/>
+      <div className="App__Main">
+        <Hero />
+        <MainComponent />
+      </div>
     </div>
   );
 }

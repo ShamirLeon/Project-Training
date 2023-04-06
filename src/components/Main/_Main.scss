@@ -1,5 +1,10 @@
 .Main{
 
+    @media only screen and (min-width:1000px) {
+        padding-left: 200px;
+        padding-right: 0px;
+    }
+
     div{
         display: flex;
         align-items: center;
@@ -24,6 +29,11 @@
     &__Title{
         color: var(--VeryDarkBlue);
         margin: 8px 0;
+
+        @media only screen and (min-width:1000px) {
+            font-size: 4rem;
+            margin: 8px 0 2rem;
+        }
     }
 
     h3{
@@ -38,6 +48,10 @@
         color: var(--GrayishBlue);
         font-size: 16px;
         margin-bottom: 16px;
+
+        @media only screen and (min-width:1000px) {
+            margin-bottom: 3rem;
+        }
     }
 
     &__Button{
@@ -49,6 +63,11 @@
         padding: 10px 16px;
         letter-spacing: 2px;
         border-radius: 4px;
+
+        @media only screen and (min-width:1000px) {
+            padding: 10px 32px;
+            font-size: 16px;
+        }
 
         &--second{
             background: none;

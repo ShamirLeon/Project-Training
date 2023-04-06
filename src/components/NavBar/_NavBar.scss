@@ -9,14 +9,24 @@
         width: 20px;
     }
 
+    &__Button{
+        @media only screen and (min-width:1000px) {
+            display: none;
+        }
+    }
+
     &__Div{
-        width: 45%;
+        width: 170px;
         height: 100%;
         background-color: var(--LightGrayishBlue);
         position: absolute;
         right: 0;
         top: 0;
         z-index: -1;
+
+        @media only screen and (min-width:1000px) {
+            width: 700px;
+        }
     }
 
     &__Menu{
@@ -34,6 +44,15 @@
         z-index: 30;
         border-radius: 4px;
         transition: all .3s ease-in;
+
+        @media only screen and (min-width:1000px){
+            position: relative;
+            top: 0;
+            padding: 0;
+            background: none;
+            flex-direction: row;
+            gap: 40px;
+        }
         
         li{
             text-transform: uppercase;
@@ -41,14 +60,17 @@
             font-weight: 700;
             width: 100%;
             text-align: center;
-            transition: color .3s ease;
-
-            &:hover{
-                color: var(--GrayishBlue);
-            }
 
             &:last-child{
                 color: var(--GrayishBlue);
+            }
+            
+            a, a:visited{
+                color: var(--VeryDarkBlue);
+                transition: color .3s ease;
+                &:hover{
+                    color: var(--GrayishBlue);
+                }
             }
         }
     }
@@ -58,6 +80,12 @@
     width: 80%;
     height: 1px;
     background-color: var(--GrayishBlue);
+
+    @media only screen and (min-width:1000px) {
+        min-width: 6px;
+        height: 6px;
+        border-radius: 50%;
+    }
 }
 
 .active{

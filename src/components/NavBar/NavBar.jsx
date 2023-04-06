@@ -19,16 +19,19 @@ function NavBar() {
           ToggleMenu();
           setMenu(!menu);
         }}
+        className="NavBar__Button"
       >
         {!menu ? <img src={IconHamburguer} /> : <img src={IconClose} />}
       </button>
 
       <ul className="NavBar__Menu">
-        <li>Product</li>
-        <li>Features</li>
-        <li>Pricing</li>
+        <li>
+          <a href="#"> Product</a>
+        </li>
+        <li> <a href="#">Features</a></li>
+        <li> <a href="#">Pricing</a></li>
         <div className="Menu__Spacer"></div>
-        <li>Login</li>
+        <li> <a href="#">Login</a></li>
       </ul>
     </nav>
   );

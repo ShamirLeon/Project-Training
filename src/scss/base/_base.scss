@@ -8,4 +8,18 @@ body{
 
 .container{
     padding: var(--paddingContainer);
+
+    @media only screen and (min-width:1000px) {
+        padding: 40px 200px;
+    }
+}
+
+.App__Main{
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (min-width:1000px) {
+        flex-direction: row-reverse;
+        align-items: center;
+    }
 }

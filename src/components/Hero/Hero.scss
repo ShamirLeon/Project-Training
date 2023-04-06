@@ -6,10 +6,15 @@
     &__Img{
         width: 520px;
         padding: 0 12px;
+
+        @media only screen and (min-width:1000px) {
+            width: auto;
+            position: relative;
+        }
     }
 
     div{
-        width: 45%;
+        width: 170px;
         height: 100%;
         background-color: var(--LightGrayishBlue);
         position: absolute;
@@ -17,5 +22,10 @@
         top: 0;
         border-bottom-left-radius: 50px;
         z-index: -1;
+
+        @media only screen and (min-width:1000px) {
+            width: 700px;
+            height: 50%;
+        }
     }
 }
